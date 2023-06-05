@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This exercise starts off with a 1-dimensional drag and drop function.
+Thereafter a 2-dimensional drag and drop function.
 
-Things you may want to cover:
+## One-Dimensional Drag and Drop
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
