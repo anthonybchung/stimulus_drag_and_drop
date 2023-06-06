@@ -1,6 +1,6 @@
 <h1>List all Task</h1>
 
 
-<section class="mx-10 bg-violet-200 px-4 py-2 rounded">
+<%= form_with url: "tasks_path", method: :update, class: "mx-10 bg-violet-200 px-4 py-2 rounded", data:{controller: "one-dimension"} do |form| %>
 	<%= render @tasks %>
-</section>
+<% end %>

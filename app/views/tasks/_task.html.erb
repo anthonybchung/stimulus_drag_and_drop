@@ -1,3 +1,12 @@
-<div class="border-2 my-2 p-1 rounded border-violet-900" draggable="true">
+<div class="border-2 my-2 p-1 rounded border-violet-900"
+     draggable="true"
+     data-one-dimension-target="task"
+     data-action="dragstart->one-dimension#dragStart
+                  dragover->one-dimension#dragOver
+                  drop->one-dimension#Drop
+                  dragend->one-dimension#dragEnd"
+     id="<%= "#{task.id}" %>">
+
 	<h2><%= task.name %></h2>
+	<p><%= task.id %></p>
 </div>
