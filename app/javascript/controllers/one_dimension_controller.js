@@ -5,7 +5,7 @@ export default class extends Controller {
   connect() {
   }
 
-  static targets = ["task"]
+  static targets = ["task","chosen","dropped"]
   static value = ["chosen","dropped"]
 
   dragStart(event){
@@ -21,6 +21,9 @@ export default class extends Controller {
   }
   dragEnd(event){
     event.preventDefault()
+    this.chosenTarget.value = this.chosenValue
+    this.droppedTarget.value = this.droppedValue
+    this.element.submit()
     console.log("drag end")
     console.log(this.chosenValue)
     console.log(this.droppedValue)
