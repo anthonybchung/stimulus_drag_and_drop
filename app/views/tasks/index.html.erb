@@ -2,5 +2,5 @@
 
 
 <%= form_with url: "tasks_path", method: :update, class: "mx-10 bg-violet-200 px-4 py-2 rounded", data:{controller: "one-dimension"} do |form| %>
-	<%= render @tasks %>
+	<%= render partial: "task",collection: @tasks, as: :task, locals: {form: form} %>
 <% end %>

@@ -6,8 +6,10 @@ export default class extends Controller {
   }
 
   static targets = ["task"]
+  static value = ["chosen","dropped"]
 
   dragStart(event){
+    this.chosenValue = event.target.id
     console.log("drag started")
     console.log(event.target.id)
   }
@@ -20,11 +22,13 @@ export default class extends Controller {
   dragEnd(event){
     event.preventDefault()
     console.log("drag end")
-    console.log(event.currentTarget.id)
+    console.log(this.chosenValue)
+    console.log(this.droppedValue)
   }
 
   Drop(event){
     event.preventDefault()
+    this.droppedValue = event.currentTarget.id
     console.log("drag drop")
     console.log(event.currentTarget.id)
   }
