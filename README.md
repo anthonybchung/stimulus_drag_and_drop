@@ -40,3 +40,45 @@ Each will be created separately, in the end it will be assembled using turbo-fra
 
 ## Step Three: Business Logic to update the data.
 
+There are several scenario in moving tasks position.
+
+Assume we have 8 elements.
+
+| Position | Name |
+|:--------:|:----:|
+|    1     |  A   |
+|    2     |  B   |
+|    3     |  C   |
+|    4     |  D   |
+|    5     |  E   |
+|    6     |  F   |
+|    7     |  G   |
+|    8     |  H   |
+
+### Moving B to position 5.
+
+| Position |  Name   |    Moved     |
+|:--------:|:-------:|:------------:|
+|    1     |    A    |              |
+|   xxx    |   xxx   |     xxx      |
+|    3     |    C    |              |
+|    4     |    D    |              |
+|    5     |    E    |              |
+| ***5***  | ***B*** | **&#x2193;** |
+|    6     |    F    |              |
+|    7     |    G    |              |
+|    8     |    H    |              |
+
+Moved
+
+| Position | Name |  Moved   |
+|:--------:|:----:|:--------:|
+|    1     |  A   |    -     |
+|    2     |  C   | &#x2191; |
+|    3     |  D   | &#x2191; |
+|    4     |  E   | &#x2191; |
+|    5     |  B   | &#x2193; |
+|    6     |  F   |    -     |
+|    7     |  G   |    -     |
+|    8     |  H   |    -     |
+
