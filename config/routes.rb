@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   resources :tasks
+
+  patch "/drags", to: "drags#update"
 end

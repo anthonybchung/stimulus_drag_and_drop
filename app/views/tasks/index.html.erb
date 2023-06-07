@@ -1,7 +1,7 @@
 <h1>List all Task</h1>
 
 
-<%= form_with url: tasks_path, method: :get, class: "mx-10 bg-violet-200 px-4 py-2 rounded", data:{controller: "one-dimension"} do |form| %>
+<%= form_with url: drags_path, method: :patch, class: "mx-10 bg-violet-200 px-4 py-2 rounded", data:{controller: "one-dimension"} do |form| %>
 	<%= render partial: "task",collection: @tasks, as: :task, locals: {form: form} %>
 	<%= form.hidden_field(:chosen_id, data: {one_dimension_target: :chosen}) %>
 	<%= form.hidden_field(:dropped_id, data: {one_dimension_target: :dropped}) %>

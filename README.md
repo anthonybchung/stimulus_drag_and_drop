@@ -36,7 +36,8 @@ Each will be created separately, in the end it will be assembled using turbo-fra
 
 1. List all tasks.
 2. Make it draggable and submit the task new position.
-    - Chosen Task_id and Dropped Task_id will be submitted to the controller.
+    - Chosen Task_id and Dropped Task_id will be submitted to the controller. 
+    - Create a controller called **drags** because tasks controller will be left for CRUD.
 
 ## Step Three: Business Logic to update the data.
 
